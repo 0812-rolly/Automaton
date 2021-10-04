@@ -25,7 +25,16 @@ public class Automaton {
         for (String s : alphabet) {
             System.out.print(s + " ");
         }
-        System.out.println("\nEnter the input sequence: ");
+        System.out.print("\nAmount of states: " + amountOfStates);
+
+        System.out.print("\nStart state: " + startState);
+
+        System.out.print("\nEnd states: ");
+        for (int s : endStates) {
+            System.out.print(s + " ");
+        }
+
+        System.out.println("\n\nEnter the input sequence: ");
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         startingAutomate(input);
@@ -76,6 +85,13 @@ public class Automaton {
             alphabet.add(fullAlphabet[i]);
         }
 
+        startState = Integer.parseInt(params[1]);
+        int len = params.length - 2;
+        endStates = new int[len];
+        for (int i=0; i < len; i++){
+            endStates[i] = Integer.parseInt(params[i+2]);
+        }
+
         transactFunction = new int[amountOfStates][fullAlphabet.length];
         for (int i = 0; i < amountOfStates; i++){
             String[] states = reader.readLine().split(" ");
@@ -84,11 +100,5 @@ public class Automaton {
             }
         }
 
-        startState = Integer.parseInt(params[1]);
-        int len = params.length - 2;
-        endStates = new int[len];
-        for (int i=0; i < len; i++){
-            endStates[i] = Integer.parseInt(params[i+2]);
-        }
     }
 }

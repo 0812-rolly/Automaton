@@ -1,1 +1,1 @@
-Input sequence rejected
+Input sequence accepted
