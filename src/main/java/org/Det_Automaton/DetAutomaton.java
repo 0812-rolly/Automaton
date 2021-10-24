@@ -1,3 +1,5 @@
+package org.Det_Automaton;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -7,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Automaton {
+public class DetAutomaton {
     public static int amountOfStates;
     public static List<String> alphabet = new ArrayList<>();
     public static int [][] transactFunction;
