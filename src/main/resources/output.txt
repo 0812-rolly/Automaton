@@ -1,0 +1,3 @@
+Input sequence: abca
+Achieved end states: 3 4 
+Input sequence accepted.
