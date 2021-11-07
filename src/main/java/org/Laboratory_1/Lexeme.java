@@ -49,7 +49,7 @@ public class Lexeme {
 
     @Override
     public String toString() {
-        return "Class of lexeme: " + classOfLexeme + "\nType of lexeme: " + typeOfLexeme + "\nValue: " + value + "\nPosition: " + position + "\n";
+        return "Класс лексемы: " + classOfLexeme + "\nТип лексемы: " + typeOfLexeme + "\nЗначение: " + value + "\nПозиция: " + position + "\n";
     }
 
     @Override
