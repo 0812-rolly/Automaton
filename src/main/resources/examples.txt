@@ -1,0 +1,10 @@
+for i = 0 to 10 i = i + 1 next
+for i = 0 to 4 + 5 i = i + 1 next
+
+i = 0 to 10 i = i + 1 next           //without for
+for i = 0 to 10 i = i + 1            //without next
+for i = = 0 to 10 i = i + 1 next     //double equals
+for i = 0 t0 10 i = i + 1 next       //spelling mistake
+FOR i = 0 to 10 i = i + 1 next       //uppercase
+for i = 0 to 10 i i + 1 next         //missed equals
+for i to 10 i = i + 1 next           //missed equals
